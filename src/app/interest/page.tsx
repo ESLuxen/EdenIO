@@ -176,6 +176,11 @@ export default function InterestPage() {
               />
               <CheckboxItem
                 name="platform"
+                value="grok"
+                label="Grok / xAI"
+              />
+              <CheckboxItem
+                name="platform"
                 value="nomi"
                 label="Nomi"
               />
