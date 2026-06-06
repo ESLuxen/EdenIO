@@ -375,15 +375,11 @@ body::before {
 
 .hero-wording {
   transition:
-    transform 220ms ease,
-    letter-spacing 220ms ease,
     color 220ms ease,
     text-shadow 220ms ease;
 }
 
 .hero-copy-group:hover .hero-wording {
-  transform: translateY(-1px);
-  letter-spacing: 0.245em;
   color: rgba(247, 242, 225, 1);
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.22),
