@@ -1,23 +1,28 @@
+import Link from "next/link";
 import { BUSINESS_NAME, CONTACT_EMAIL } from "@/lib/constants";
 
 export default function ThankYouPage() {
   return (
-    <div className="min-h-full">
+    <div className="page-shell min-h-full overflow-x-hidden">
+      <div className="ambient-orb left-[-8rem] top-24 h-64 w-64 bg-accent/12" />
+      <div className="ambient-orb right-[-6rem] top-[20rem] h-72 w-72 bg-[rgba(120,150,96,0.12)]" />
+
       {/* Navigation */}
-      <nav className="border-b border-border">
-        <div className="max-w-2xl mx-auto px-6 sm:px-8 py-4">
-          <a
+      <nav className="border-b border-border/70 bg-background/82 backdrop-blur-md">
+        <div className="mx-auto max-w-3xl px-6 py-4 sm:px-8">
+          <Link
             href="/"
-            className="text-lg font-semibold tracking-tight text-foreground hover:text-accent transition-colors"
+            className="font-heading text-sm uppercase tracking-[0.34em] text-heading transition-opacity hover:opacity-90 sm:text-base"
           >
             {BUSINESS_NAME}
-          </a>
+          </Link>
         </div>
       </nav>
 
-      <main className="max-w-2xl mx-auto px-6 sm:px-8 py-20 sm:py-32">
-        <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground mb-6">
+      <main className="mx-auto max-w-3xl px-6 py-18 sm:px-8 sm:py-28">
+        <div className="section-panel rounded-[1.8rem] px-6 py-10 text-center sm:px-10 sm:py-14">
+          <p className="eyebrow mb-4">Received</p>
+          <h1 className="font-heading text-[1.7rem] uppercase leading-[1.35] tracking-[0.18em] text-heading sm:text-[2.2rem] mb-6">
             We received your form.
           </h1>
           <p className="text-foreground/70 leading-relaxed mb-4 max-w-lg mx-auto">
@@ -29,12 +34,12 @@ export default function ThankYouPage() {
             If it is not the right fit, we will tell you honestly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/"
-              className="inline-flex items-center justify-center rounded-lg border border-border-light text-foreground/80 font-medium px-8 py-3.5 text-sm hover:border-accent/40 hover:text-foreground transition-colors"
+              className="inline-flex items-center justify-center rounded-full border border-white/14 bg-[rgba(229,238,222,0.1)] px-8 py-3.5 text-sm uppercase tracking-[0.18em] text-heading backdrop-blur-sm transition-colors hover:bg-[rgba(229,238,222,0.16)]"
             >
               Back to Home
-            </a>
+            </Link>
           </div>
           <p className="text-muted text-sm mt-8">
             Questions in the meantime?{" "}
