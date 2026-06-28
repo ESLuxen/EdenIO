@@ -8,6 +8,10 @@ function formatList(values: string[]) {
   return values.length ? values.join(", ") : "None provided";
 }
 
+function isEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+}
+
 export async function submitInterestForm(formData: FormData) {
   const name = formData.get("name") as string;
   const contact = formData.get("contact") as string;
@@ -56,7 +60,7 @@ export async function submitInterestForm(formData: FormData) {
       await resend.emails.send({
         from: fromEmail,
         to: [toEmail],
-        replyTo: contact || undefined,
+        replyTo: isEmail(contact) ? contact.trim() : undefined,
         subject: `New EdenIO intake from ${name || "Unknown"}`,
         text: [
           `Timestamp: ${submission.timestamp}`,
