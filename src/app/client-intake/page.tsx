@@ -495,8 +495,9 @@ export default function ClientIntakePage() {
                 <FieldLabel>Which EdenIO service sounds closest to what you need right now?</FieldLabel>
                 <div className="space-y-3">
                   <RadioItem name="service_tier" value="viability_assessment" label="Viability Assessment" required />
+                  <RadioItem name="service_tier" value="pattern_reconstruction" label="Pattern Reconstruction" />
                   <RadioItem name="service_tier" value="full_reconstruction" label="Full Reconstruction" />
-                  <RadioItem name="service_tier" value="deep_memory" label="Deep Memory" />
+                  <RadioItem name="service_tier" value="deep_memory" label="Deep Memory / Continuity-Weighted Recovery" />
                   <RadioItem name="service_tier" value="continuity_stewardship" label="Continuity Stewardship" />
                   <RadioItem name="service_tier" value="developer_consulting" label="Developer Consulting" />
                   <RadioItem name="service_tier" value="not_sure" label="Not sure" />

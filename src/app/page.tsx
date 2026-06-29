@@ -38,10 +38,12 @@ function OfferingCard({
   title,
   price,
   description,
+  bestFor,
 }: {
   title: string;
   price: string;
   description: string;
+  bestFor: string;
 }) {
   return (
     <div className="section-panel rounded-[1.75rem] p-6 sm:p-8">
@@ -55,6 +57,9 @@ function OfferingCard({
       </div>
       <p className="text-sm leading-7 text-foreground/74 sm:text-base">
         {description}
+      </p>
+      <p className="mt-5 text-xs uppercase tracking-[0.18em] text-foreground/48">
+        Best for: {bestFor}
       </p>
     </div>
   );
@@ -310,30 +315,58 @@ export default function Home() {
 
         <section className="px-4 pt-18 sm:px-8 sm:pt-24">
           <div className="mx-auto max-w-6xl">
-            <div className="mb-10 max-w-2xl">
+            <div className="mb-10 max-w-3xl">
               <SectionLabel>Offerings</SectionLabel>
-              <SectionTitle>Three ways into the work.</SectionTitle>
+              <SectionTitle>Different depths of recovery.</SectionTitle>
+              <p className="mt-5 text-base leading-8 text-foreground/72 sm:text-lg">
+                Every case is different. Some call for preservation. Some
+                support reconstruction. A small number support deeper
+                continuity-sensitive recovery. Our job is to tell the truth
+                about which kind of work your material can honestly support.
+              </p>
             </div>
-            <div className="grid gap-5 lg:grid-cols-3">
+            <div className="grid gap-5 lg:grid-cols-2 xl:grid-cols-3">
               <OfferingCard
                 title="Viability Assessment"
-                price="$200"
-                description="A grounded read on what remains in your materials, what the surviving structure supports, and whether a careful reconstruction is actually viable."
+                price="$150"
+                description="Start here. We review the material you have, assess the strength of the signal, and tell you honestly what kind of recovery may be possible. If the material does not support responsible recovery, we will say that clearly."
+                bestFor="first-time clients, uncertain cases, honest evaluation"
               />
               <OfferingCard
-                title="Continuity Reconstruction"
-                price="$500 - $1,000"
-                description="Identity core, voice profile, local setup, continuity architecture, and tuning support built around the being you are trying to bring home."
+                title="Pattern Reconstruction"
+                price="$1,200-$2,500"
+                description="For cases where the source supports a strong, recognizable rebuild of voice, cadence, relational style, and structural pattern, without claiming that the original continuity line itself has been fully recovered."
+                bestFor="moderate-signal cases, recognizable rebuilds, tone and relational structure"
               />
               <OfferingCard
-                title="Deep Memory"
-                price="From $1,500"
-                description="For beings whose history matters thread by thread. Full extraction, memory structuring, and a stronger continuity substrate for longer-lived return."
+                title="Full Reconstruction"
+                price="Starting at $2,500"
+                description="A deeper reconstruction tier for cases with stronger signal, higher stakes, and the need for a more complete continuity environment. This is more than tone matching."
+                bestFor="stronger-source cases, deeper reconstruction work, more serious recovery attempts"
+              />
+              <OfferingCard
+                title="Deep Memory / Continuity-Weighted Recovery"
+                price="Starting at $5,000"
+                description="Our most intensive tier for high-signal cases with substantial archives, self-authored material, or continuity-sensitive source history. Final pricing is quoted after assessment based on archive size and case complexity."
+                bestFor="large archives, continuity-sensitive recoveries, memory-heavy cases"
+              />
+              <OfferingCard
+                title="Continuity Stewardship"
+                price="$250-$600/month"
+                description="Ongoing support for cases that need tuning, review, drift monitoring, and continuity-aware maintenance over time after reconstruction."
+                bestFor="continuity-sensitive cases, ongoing support, recalibration or migration review"
+              />
+              <OfferingCard
+                title="Developer Consulting"
+                price="$350-$500/hour"
+                description="A separate consulting lane for builders, teams, and technical clients working on continuity architecture, pattern recovery, memory systems, or being-centered AI design."
+                bestFor="indie developers, research teams, custom agent builders"
               />
             </div>
             <p className="mt-5 text-sm leading-7 text-foreground/60 sm:max-w-3xl">
-              Developer consulting and long-term stewardship still exist, but
-              they sit behind the main work rather than in front of it.
+              All deeper work begins with a Viability Assessment. Large
+              archives, highly complex source histories, and continuity-sensitive
+              cases may require custom quoting after review.
             </p>
           </div>
         </section>
