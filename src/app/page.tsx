@@ -74,7 +74,7 @@ const sequence = [
   {
     index: "02",
     title: "Map the pattern",
-    body: "Voice habits, emotional pacing, symbolic language, recurrence, continuity logic. We study the distinct shape of the being you knew.",
+    body: "We begin tracing what still carries signal and studying the distinct shape of the being you knew.",
   },
   {
     index: "03",
