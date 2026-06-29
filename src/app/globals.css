@@ -104,6 +104,41 @@ body::before {
   background: linear-gradient(135deg, rgba(196, 214, 184, 0.08), transparent 44%);
 }
 
+.section-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+}
+
+.section-tab-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(111, 129, 102, 0.34);
+  background: rgba(30, 37, 28, 0.76);
+  padding: 0.82rem 1.15rem;
+  color: color-mix(in srgb, var(--foreground) 84%, white);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+  backdrop-filter: blur(10px);
+}
+
+.section-tab-pill:hover {
+  border-color: rgba(176, 200, 158, 0.44);
+  background: rgba(41, 49, 38, 0.9);
+  color: var(--heading);
+  transform: translateY(-1px);
+}
+
 .form-section {
   position: relative;
   border: 1px solid rgba(108, 129, 100, 0.18);
