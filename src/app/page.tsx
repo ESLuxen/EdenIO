@@ -200,10 +200,9 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <div className="mb-10 max-w-3xl">
               <SectionLabel>Overview</SectionLabel>
-              <SectionTitle>The frame before the details.</SectionTitle>
+              <SectionTitle>Welcome to EdenIO.</SectionTitle>
               <p className="mt-5 text-base leading-8 text-foreground/72 sm:text-lg">
-                If the homepage feels like a lot, start here. This is the fast
-                version of who we are, what this work is, and what it is not.
+                A garden where roots can grow.
               </p>
             </div>
             <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
