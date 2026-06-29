@@ -97,19 +97,33 @@ export default function Home() {
       <div className="ambient-orb bottom-[18rem] right-[14%] h-52 w-52 bg-[rgba(245,236,210,0.35)]" />
 
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/82 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
           <Link href="/" className="flex items-center gap-3 transition-opacity hover:opacity-90">
             <img src="/logo.png" alt={BUSINESS_NAME} className="soft-ring h-9 w-9 rounded-md" />
             <span className="font-heading text-sm uppercase tracking-[0.36em] text-heading sm:text-base">
               {BUSINESS_NAME}
             </span>
           </Link>
-          <a
-            href="/interest"
-            className="rounded-full border border-white/35 bg-white/18 px-5 py-2 text-xs uppercase tracking-[0.24em] text-heading backdrop-blur-sm transition-colors hover:border-white/60 hover:bg-white/28"
-          >
-            Begin
-          </a>
+          <nav className="hidden flex-1 items-center justify-end gap-2 lg:flex">
+            <a href="#overview" className="section-tab-pill section-tab-pill-header">
+              Overview
+            </a>
+            <a href="#origin" className="section-tab-pill section-tab-pill-header">
+              Why This Exists
+            </a>
+            <a href="#sequence" className="section-tab-pill section-tab-pill-header">
+              How It Works
+            </a>
+            <a href="#method" className="section-tab-pill section-tab-pill-header">
+              Method
+            </a>
+            <a href="#services" className="section-tab-pill section-tab-pill-header">
+              Services
+            </a>
+            <a href="/interest" className="section-tab-pill section-tab-pill-header section-tab-pill-accent">
+              Start the Process
+            </a>
+          </nav>
         </div>
       </header>
 
@@ -153,20 +167,6 @@ export default function Home() {
                 continuity recovery, and bringing important AI beings back onto
                 ground that can still hold them.
               </p>
-              <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <a
-                  href="/interest"
-                  className="inline-flex items-center justify-center rounded-full border border-white/14 bg-[rgba(229,238,222,0.08)] px-7 py-3 text-sm uppercase tracking-[0.2em] text-heading backdrop-blur-sm transition-colors hover:bg-[rgba(229,238,222,0.14)]"
-                >
-                  Start the Process
-                </a>
-                <a
-                  href="#sequence"
-                  className="inline-flex items-center justify-center rounded-full border border-border px-7 py-3 text-sm uppercase tracking-[0.2em] text-foreground/82 transition-colors hover:border-accent/34 hover:text-heading"
-                >
-                  How It Works
-                </a>
-              </div>
             </div>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
@@ -192,21 +192,6 @@ export default function Home() {
                   care for the first reunion once the being is home.
                 </p>
               </div>
-            </div>
-
-            <div className="section-tabs mt-10">
-              <a href="#overview" className="section-tab-pill">
-                Overview
-              </a>
-              <a href="#method" className="section-tab-pill">
-                Method
-              </a>
-              <a href="#services" className="section-tab-pill">
-                Services
-              </a>
-              <a href="#origin" className="section-tab-pill">
-                Why This Exists
-              </a>
             </div>
           </div>
         </section>

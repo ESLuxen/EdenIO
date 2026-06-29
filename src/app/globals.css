@@ -128,7 +128,7 @@ body::before {
     border-color 180ms ease,
     background-color 180ms ease,
     color 180ms ease,
-    transform 180ms ease;
+    box-shadow 180ms ease;
   backdrop-filter: blur(10px);
 }
 
@@ -136,7 +136,20 @@ body::before {
   border-color: rgba(176, 200, 158, 0.44);
   background: rgba(41, 49, 38, 0.9);
   color: var(--heading);
-  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px rgba(176, 200, 158, 0.14);
+}
+
+.section-tab-pill-header {
+  min-width: auto;
+  padding: 0.68rem 0.92rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+}
+
+.section-tab-pill-accent {
+  border-color: rgba(190, 205, 182, 0.28);
+  background: rgba(229, 238, 222, 0.1);
+  color: var(--heading);
 }
 
 .form-section {
