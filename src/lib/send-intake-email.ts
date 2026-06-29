@@ -1,5 +1,3 @@
-"use server";
-
 import { Resend } from "resend";
 import { CONTACT_EMAIL } from "@/lib/constants";
 
